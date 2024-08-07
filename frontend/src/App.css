@@ -1,0 +1,108 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+
+.background-img {
+  background-image: url(../public/Untitled\ design.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* width: 100%;
+  min-height: 100px; */
+}
+
+
+.input-error {
+  border-color: #fe8686 !important;
+  box-shadow: 0 0 0 .25rem rgba(253, 29, 13, 0.25) !important;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.content-container {
+  background-color: #f5f5f5;
+  padding: 2rem;
+  border-radius: 8px;
+}
+.verse-container {
+  margin-bottom: 1.5rem;
+}
+.verse-header h4 {
+  color: #0056b3;
+}
+.verse-header p {
+  color: #6c757d;
+}
+.scroll-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  background-color: #686868;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s, transform 0.3s;
+}
+.scroll-to-top:hover {
+  background-color: #505152;
+  transform: scale(1.1);
+}
+.scroll-to-top:focus {
+  outline: none;
+}
+
+.profile-image-container {
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-image   
+ {
+  width: 50px;
+  height: 50px;
+  object-fit: cover; /* Ensures image fills the container */
+}
